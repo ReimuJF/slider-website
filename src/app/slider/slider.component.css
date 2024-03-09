@@ -1,0 +1,150 @@
+.container {
+    padding-left: 106px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    flex-shrink: 0;
+    justify-content: center;
+    user-select: none;
+    padding: 0 10%;
+    margin-left: auto;
+}
+
+.current-image img {
+    margin: 0 -35%;
+    padding: 0 32px;
+    min-height: 115%;
+    min-width: 115%;
+}
+
+.inactive-image {
+    opacity: 0.4;
+}
+
+.current-info {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.counter {
+    margin-top: 48px;
+    color: #878787;
+    text-align: center;
+    font-family: "Intro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.title {
+    align-self: stretch;
+    color: #EDEDED;
+    text-align: center;
+    font-family: "Intro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.rating {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: center;
+}
+
+.star {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rating li {
+    list-style-type: none;
+}
+
+.tags {
+    padding-top: 16px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 68px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        min-width: 450px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .inactive-image {
+        display: none;
+    }
+
+
+    .current-image img {
+        min-width: 50%;
+        min-height: 50%;
+
+    }
+
+    .rating {
+        gap: 0
+    }
+
+    .rating svg {
+        width: 50%;
+        height: 50%;
+
+    }
+
+    left-button,
+    right-button {
+        margin-left: 20%;
+
+    }
+
+    .star {
+        padding: -10px;
+        width: 90%;
+        height: auto;
+    }
+
+    .left-button svg,
+    .right-button svg {
+        width: 70%;
+        height: 70%;
+        fill: #ffffff;
+    }
+
+    .info {
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

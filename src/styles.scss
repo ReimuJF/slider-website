@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #070C0F;
+    color: #EDEDED;
+    font-family: "Intro";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+@font-face {
+    font-family: "Intro";
+    src: url(./assets/fonts/Intro\ Bold\ Regular.otf);
+}
+
+
+.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    background: #070C0F;
+}
+
+.mat-mdc-menu-panel {
+    margin-left: -16px;
+
+}
